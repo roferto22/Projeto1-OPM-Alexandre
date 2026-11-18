@@ -1,0 +1,130 @@
+/* cores: 
+ Prussian Blue #001427
+ Deep Teal #708D81
+ Jasmine #F4D58D
+ Brick Ember #BF0603
+ Blood Red #8D0801*/
+
+
+
+
+
+
+#side-view {
+    position: fixed;
+    width: 100%;
+    background-color: #F4D58D;
+}
+
+#side-view li {
+    display: inline;
+    padding-right: 2rem;
+}
+
+
+#top {
+    position: fixed;
+    background-color: #F4D58D;
+    width: 20vh;
+    height: 100%;
+}
+
+
+#top li {
+    padding: 0.5rem;
+}
+
+
+body {
+    background-color: #001427;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+ol {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0.5rem;
+    list-style-type: none;
+}
+
+main {
+    margin-left: 17%;
+    margin-top: 5%;
+}
+
+ul a {
+    color: #708D81;
+
+    text-decoration: none;
+
+    font-size: 2.5vh;
+
+
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+
+}
+
+
+footer {
+
+    text-align: center;
+
+
+
+}
+
+
+footer a {
+    font-size: 2vh;
+
+
+}
+
+
+
+.descriçao {
+
+
+    margin-right: 15%;
+    margin-left: 5%;
+
+    margin-bottom: 3%;
+}
+
+
+
+@media (orientation: portrait) {
+
+    #top {
+        display: none;
+    }
+
+    main {
+        margin-left: 17%;
+        margin-top: 0%;
+    }
+
+    header {
+        display: block;
+        padding: 0%;
+        margin: 0px;
+    }
+
+    h1 {
+        margin-top: 0vh;
+
+
+    }
+
+    p {
+        text-align: center;
+    }
+
+}

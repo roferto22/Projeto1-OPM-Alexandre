@@ -1,0 +1,147 @@
+/* cores: 
+ Prussian Blue #001427
+ Deep Teal #708D81
+ Jasmine #F4D58D
+ Brick Ember #BF0603
+ Blood Red #8D0801*/
+
+
+
+
+#side-view {
+    position: fixed;
+    width: 100%;
+    background-color: #F4D58D;
+
+}
+
+#side-view li {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: inline-block;
+
+    width: 20vw;
+    margin-top: 0.2rem;
+
+}
+
+
+#top {
+    position: fixed;
+    background-color: #F4D58D;
+    width: 20vh;
+    height: 100%;
+}
+
+
+#top li {
+    padding: 0.3rem;
+
+}
+
+
+ul a {
+    color: #708D81;
+
+    text-decoration: none;
+
+    font-size: 2.5vh;
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+
+}
+
+main {
+    margin-left: 16%;
+    flex-grow: 1;
+
+    align-items: center;
+
+
+}
+
+
+
+
+iframe {
+    width: max(45vw, 400px);
+    height: max(30vw, 300px);
+    text-align: center;
+
+}
+
+section {
+    text-align: center;
+    justify-items: center;
+}
+
+
+div,
+div img {
+    width: max(50vw, 400px);
+    margin: 0;
+    padding: 0;
+
+}
+
+#carrosel-storyboard ul {
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 5vw;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: #708D81;
+    scroll-behavior: smooth;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    scroll-snap-align: center;
+}
+
+
+i {
+    color: #708D81;
+}
+
+
+section {
+    text-align: center;
+}
+
+
+
+footer div ul {
+    text-align: center;
+}
+
+
+#projetos {
+
+    padding: 6vh;
+}
+
+@media (orientation: portrait) {
+    #top {
+        display: none;
+    }
+
+    main {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+
+}

@@ -1,0 +1,174 @@
+/* cores: 
+ Prussian Blue #001427
+ Deep Teal #708D81
+ Jasmine #F4D58D
+ Brick Ember #BF0603
+ Blood Red #8D0801*/
+
+
+
+#side-view {
+    position: fixed;
+    width: 100%;
+    background-color: #F4D58D;
+}
+
+#side-view li {
+
+    display: inline;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+
+
+}
+
+
+#top {
+    position: fixed;
+    background-color: #F4D58D;
+    width: 20vh;
+    height: 100%;
+}
+
+
+#top li {
+    padding: 0.5rem;
+}
+
+ul a {
+    color: #708D81;
+
+    text-decoration: none;
+
+    font-size: 2.5vh;
+
+    padding-left: 5%;
+
+    padding-right: 5%;
+
+
+}
+
+iframe {
+    width: max(40vw, 400px);
+    height: max(30vw, 300px);
+
+
+}
+
+
+section {
+    text-align: center;
+    justify-items: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+
+.descriçao {
+    text-align: center;
+}
+
+div,
+div img {
+    width: max(40vw, 400px);
+    margin: 0;
+    padding: 0;
+}
+
+#carrossel-1,
+#carrossel-2 {
+    margin: 0;
+    margin-bottom: 3%;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 2vw;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: #BF0603;
+    scroll-behavior: smooth;
+
+}
+
+#carrossel-1 li,
+#carrossel-2 li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    scroll-snap-align: center;
+}
+
+#carrossel-1 li p,
+#carrossel-2 li p {
+    text-align: center;
+}
+
+
+
+label {
+    margin-right: 2em;
+}
+
+#labels {
+    width: 100%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#labels label {
+    padding: 1em 3em;
+    border: 3px solid #8D0801;
+    background-color: #F4D58D;
+    box-sizing: border-box;
+    margin-left: 15vw;
+    margin-right: 10vw;
+
+
+}
+
+/* Para esconder o circulo do input radio */
+main input[type='radio'] {
+    display: none;
+}
+
+/* Caso o input menu 1/menu 2 não esteja selecionado, o seu div "irmão" (~) com o id indicado é escondido. 
+   Ou seja, a ligação entre o input e o conteúdo é feita aqui. */
+#menu-1:not(:checked)~div #carrossel-1 {
+    display: none;
+}
+
+#menu-2:not(:checked)~div #carrossel-2 {
+    display: none;
+}
+
+
+
+
+#labels :hover {
+    cursor: grab;
+}
+
+
+
+@media (orientation: portrait) {
+    #labels {
+        width: 100%;
+        margin-right: 1 vh;
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+    }
+
+    #labels label {
+        margin: 0;
+    }
+}
