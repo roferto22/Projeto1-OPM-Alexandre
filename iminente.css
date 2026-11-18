@@ -3,9 +3,10 @@ div img {
     width: max(40vw, 400px);
     margin: 0;
     padding: 0;
+
 }
 
-ul {
+#carrosel-iminente ul {
     margin: 0;
     margin-bottom: 5%;
     padding: 0;
@@ -22,7 +23,7 @@ ul {
 }
 
 div iframe {
-    width: max(50vw, 500px);
+    width: max(42vw, 420px);
     height: max(30vw, 300px);
 
 
@@ -51,6 +52,7 @@ footer a {
     text-decoration: none;
 
     color: #708D81;
+
 
 
 }

@@ -14,12 +14,13 @@
 }
 
 #side-view li {
+    display: inline-block;
 
-    display: inline;
     padding-right: 2rem;
     padding-left: 2rem;
 
-
+    width: 20vw;
+    margin-top: 0.2rem;
 
 }
 
@@ -34,6 +35,7 @@
 
 #top li {
     padding: 0.5rem;
+    display: block;
 }
 
 ul a {
@@ -47,6 +49,24 @@ ul a {
 
     padding-right: 5%;
 
+
+}
+
+
+main {
+    margin-left: 15vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+
+#outros {
+    border-width: 15px;
 
 }
 
@@ -64,7 +84,7 @@ section {
 }
 
 p {
-    text-align: center;
+    text-align: justify;
     margin-bottom: 10%;
 
 }
@@ -159,6 +179,13 @@ main input[type='radio'] {
 
 
 
+footer li {
+    list-style-type: none;
+}
+
+
+
+
 @media (orientation: portrait) {
     #labels {
         width: 100%;
@@ -171,4 +198,10 @@ main input[type='radio'] {
     #labels label {
         margin: 0;
     }
+
+    main {
+        margin-left: 0vh;
+    }
+
+
 }

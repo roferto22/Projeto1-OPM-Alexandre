@@ -78,6 +78,11 @@ footer a {
 
 }
 
+
+footer li {
+    list-style-type: none;
+}
+
 @media (orientation: portrait) {
     #top {
         display: none;

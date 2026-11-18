@@ -13,6 +13,7 @@
     width: 100%;
     background-color: #F4D58D;
 
+
 }
 
 #side-view li {
@@ -51,6 +52,14 @@ ul a {
 
     padding-right: 5%;
 
+
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 
 }
 
@@ -123,15 +132,18 @@ section {
 
 
 
-footer div ul {
+/* footer div ul {
     text-align: center;
-}
+    margin-left: 15vh;
+} */
 
 
 #projetos {
+    border-width: 15px;
 
-    padding: 6vh;
 }
+
+
 
 @media (orientation: portrait) {
     #top {
@@ -141,6 +153,11 @@ footer div ul {
     main {
         margin-left: 0%;
         margin-top: 0%;
+    }
+
+    footer div ul {
+        text-align: center;
+        margin-left: 0;
     }
 
 
